@@ -36,4 +36,17 @@ public class MovieTest {
         movie.setGenre("Sci-fi");
         assertEquals("Sci-fi",movie.getGenre());
     }
+
+    @Test
+    public void canGetMovieRanking(){
+        Movie movie = new Movie("The Martian", "Sci-fi",4.25);
+        assertEquals(4.25,movie.getRanking(),0.1);
+    }
+
+    @Test
+    public void canSetMovieRanking(){
+        Movie movie = new Movie("The Martian", "Sci-fi",4.25);
+        movie.setRanking(4.10);
+        assertEquals(4.10,movie.getRanking(),0.1);
+    }
 }

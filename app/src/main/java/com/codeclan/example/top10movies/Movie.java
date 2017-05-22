@@ -30,4 +30,12 @@ public class Movie {
     public void setGenre(String newgenre) {
         this.genre = newgenre;
     }
+
+    public double getRanking() {
+        return this.current_ranking;
+    }
+
+    public void setRanking(double newranking) {
+        this.current_ranking = newranking;
+    }
 }
