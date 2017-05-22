@@ -22,4 +22,12 @@ public class Movie {
     public void setTitle(String newtitle) {
         this.title = newtitle;
     }
+
+    public String getGenre() {
+        return this.genre;
+    }
+
+    public void setGenre(String newgenre) {
+        this.genre = newgenre;
+    }
 }

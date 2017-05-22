@@ -23,4 +23,17 @@ public class MovieTest {
         movie.setTitle("A beautiful mind");
         assertEquals("A beautiful mind", movie.getTitle());
     }
+
+    @Test
+    public void canGetMovieGenre(){
+        Movie movie = new Movie("A beautiful mind", "Drama", 4.0);
+        assertEquals("Drama",movie.getGenre());
+    }
+
+    @Test
+    public void canSetMovieGenre(){
+        Movie movie = new Movie("Star Wars","Unknown",3.8);
+        movie.setGenre("Sci-fi");
+        assertEquals("Sci-fi",movie.getGenre());
+    }
 }
