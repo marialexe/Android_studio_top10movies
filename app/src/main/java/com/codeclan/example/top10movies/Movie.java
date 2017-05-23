@@ -7,9 +7,9 @@ package com.codeclan.example.top10movies;
 public class Movie {
     private String title;
     private String genre;
-    private double current_ranking;
+    private int current_ranking;
 
-    public Movie (String title, String genre, double current_ranking){
+    public Movie (String title, String genre, int current_ranking){
         this.title = title;
         this.genre = genre;
         this.current_ranking = current_ranking;
@@ -35,7 +35,12 @@ public class Movie {
         return this.current_ranking;
     }
 
-    public void setRanking(double newranking) {
+    public void setRanking(int newranking) {
         this.current_ranking = newranking;
+    }
+
+    @Override
+    public String toString(){
+        return String.format("Title: '%s', Genre: '%s', Ranking: %d", title, genre, current_ranking);
     }
 }
